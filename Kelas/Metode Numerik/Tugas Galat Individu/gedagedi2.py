@@ -28,5 +28,3 @@ for n in range(1, 6):
 print("n\tMaclaurin Thingymajig\t\tGalat")
 for row in table:
     print(f"{row[0]}\t{row[1]:.16f}\t{row[2]:.16f}")
-
-    
