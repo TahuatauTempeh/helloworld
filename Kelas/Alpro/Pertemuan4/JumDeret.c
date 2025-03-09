@@ -8,26 +8,24 @@
 /*Program Utama*/
 int main()
 {   /*Kamus*/
-    int N;                    /*brp banyak bilangan yg mau ditambah dari angka 1 dst. n>0*/
-    int totalthingymajig;     /*total*/
-    int i = 1;                   /*start/end loop*/
+    int N;                    /* banyak bilangan yg bakal ditambahkan. n > 0 */
+    int totalthingymajig = 0; /* total semuanya. simplenya, mulai dari angka 0 terus tambah 1 dari angka sebelumnya*/
+    int i = 1;                /* this somehow works */
 
     /*Algoritma*/
     printf("Berapa kali penjumlahan: \n");
     scanf("%d", &N);
 
-    /* Validasi input */
+    
     while (N <= 0)
     {
-        printf("Bilangan harus lebih dari 0. Masukkan lagi: \n");
+        printf("Bilangan tidak boleh 0\n");
         scanf("%d", &N);
     }
-
-    /* Hitung total deret menggunakan while */
     while (i <= N)
     {
-        totalthingymajig += i; // Tambahkan nilai i ke totalthingymajig
-        i++;                  // Increment i
+        totalthingymajig += i; 
+        i++;                  
     }
 
     /* Output hasil */
