@@ -14,7 +14,7 @@ int main()
     printf("Berapa kali penjumlahan: \n");
     scanf("%f", &N);
 
-    while (N )
+    while (N)
     {
         /* code */
     }
