@@ -16,19 +16,22 @@ int main()
     printf("Berapa kali penjumlahan: \n");
     scanf("%d", &N);
 
-    if (N <= 0)
+    /* Validasi input */
+    while (N <= 0)
     {
-        printf("Bilangan tidak boleh 0\n");
+        printf("Bilangan harus lebih dari 0. Masukkan lagi: \n");
+        scanf("%d", &N);
     }
-    else
+
+    /* Hitung total deret menggunakan while */
+    while (i <= N)
     {
-        while (i <= N)
-        {
-            totalthingymajig += i;
-            i++;
-        }
-        
-        printf("Total: %d\n", N, totalthingymajig);
+        totalthingymajig += i; // Tambahkan nilai i ke totalthingymajig
+        i++;                  // Increment i
     }
+
+    /* Output hasil */
+    printf("Total: %d\n", totalthingymajig);
+
     return 0;
 }
