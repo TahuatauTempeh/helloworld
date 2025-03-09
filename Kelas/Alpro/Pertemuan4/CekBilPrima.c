@@ -8,8 +8,15 @@
 /*Program Utama*/
 int main()
 {   /*Kamus*/
-  
+    int N;      /*bilangannya, yg di cek*/
+    int prima;  /*checker prima*/
+
     /*Algoritma*/
-  
+    printf("Masukkan bilangan: \n");
+    scanf("%d", N);
+
+    
+
+
     return 0;
 }
