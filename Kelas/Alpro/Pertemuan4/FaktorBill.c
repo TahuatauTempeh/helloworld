@@ -9,20 +9,18 @@
 int main()
 {   /*Kamus*/
     int N;          /*bilangan*/
-    int i = 1;      /*thingymajig*/
+    int i = 1;      /*buat perulangan*/
 
     /*Algoritma*/
     printf("Masukkan bilangan N : \n");
     scanf("%d", &N);
 
-    /*Validasi input*/
     while (N <= 0)
     {
         printf("Bilangan harus tidak boleh <= 0. Masukkan lagi: \n");
         scanf("%d", &N);
     }
 
-    /*Mencari faktor bilangan*/
     printf("Faktor bilangan dari %d adalah: ", N);
     while (i <= N)
     {
