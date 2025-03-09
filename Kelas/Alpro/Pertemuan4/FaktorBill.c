@@ -12,7 +12,7 @@ int main()
     int i = 1;      /*thingymajig*/
 
     /*Algoritma*/
-    printf("Masukkan bilangan N (N > 0): \n");
+    printf("Masukkan bilangan N : \n");
     scanf("%d", &N);
 
     /*Validasi input*/
