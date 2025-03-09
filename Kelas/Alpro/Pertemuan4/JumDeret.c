@@ -30,7 +30,7 @@ int main()
         i++;                  
     }
 
-    /* Output hasil */
+    /*ini output*/
     printf("Total: %d\n", totalthingymajig);
 
     return 0;
