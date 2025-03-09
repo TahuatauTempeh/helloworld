@@ -10,7 +10,7 @@ int main()
 {   /*Kamus*/
     int N;                    /* banyak bilangan yg bakal ditambahkan. n > 0 */
     int totalthingymajig = 0; /* total semuanya. simplenya, mulai dari angka 0 terus tambah 1 dari angka sebelumnya */
-    int i = 1;                /* variabel iterasi */
+    int i = 1;                /* buat ulang ulang */
 
     /*Algoritma*/
     printf("Berapa kali penjumlahan: \n");

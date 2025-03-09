@@ -18,7 +18,7 @@ int main()
 
     if (N <= 0)
     {
-        printf("Bilangan tidak boleh 0 atau kurang dari 0;\n");
+        printf("Bilangan tidak boleh 0 or kurang dari 0\n");
     }
     else
     {
@@ -46,11 +46,11 @@ int main()
 
         if (prima)
         {
-            printf("%d adalah bilangan prima.\n", N);
+            printf("%d adalah bilangan prima\n", N);
         }
         else
         {
-            printf("%d bukan bilangan prima.\n", N);
+            printf("%d bukan bilangan prima\n", N);
         }
     }
 
