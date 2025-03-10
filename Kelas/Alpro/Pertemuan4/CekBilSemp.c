@@ -8,8 +8,16 @@
 /*Program Utama*/
 int main()
 {   /*Kamus*/
-  
+    int N;          /*bilangan nya*/
+    int i;          /*buat looper*/
+    int checker;    /*buat check bil sempurna or not*/
+    
     /*Algoritma*/
-  
+    printf("Masukkan bilangan: \n");
+    scanf("%d", &N);
+
+    
+
+
     return 0;
 }
