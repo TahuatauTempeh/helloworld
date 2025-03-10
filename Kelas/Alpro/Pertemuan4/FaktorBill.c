@@ -8,33 +8,30 @@
 /*Program Utama*/
 int main()
 {   /*Kamus*/
-    int N;          /*bilangan*/
-    int i = 1;      /*buat perulangan*/
+    int N;      /*bilangan*/
+    int i;      /*buat perulangan*/
 
     /*Algoritma*/
-    printf("Masukkan bilangan N : \n");
+    printf("Masukan bilangan: \n");
     scanf("%d", &N);
 
-    while (N <= 0)
+    if (N >= 0)
     {
-        printf("Bilangan harus tidak boleh <= 0. Masukkan lagi: \n");
-        scanf("%d", &N);
-    }
-
-    printf("Faktor bilangan dari %d adalah: ", N);
-    while (i <= N)
-    {
-        if (N % i == 0)
+        printf("Hasil: ");
+        for (i = 1; i <= N; i++)
         {
-            printf("%d", i); 
-            if (i != N)   
+            if (N % i == 0)
             {
-                printf(", ");
+                printf(" %d", i);
             }
         }
-        i++;
+        printf("\n");
     }
-    printf("\n");
+    else
+    {
+        printf("Masukan tidak boleh 0 atau kurang dari 0\n");
+    }
+    
 
     return 0;
 }

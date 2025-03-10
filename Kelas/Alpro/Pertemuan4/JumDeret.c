@@ -13,25 +13,24 @@ int main()
     int i = 1;                /* buat ulang ulang */
 
     /*Algoritma*/
-    printf("Berapa kali penjumlahan: \n");
+    printf("Masukkan bilangan: \n");
     scanf("%d", &N);
 
-    /* buat cek input */
-    while (N <= 0)
-    {
-        printf("Bilangan tidak boleh 0\n");
-        scanf("%d", &N);
-    }
 
-    /* yg ini buat hitung total deret*/
-    while (i <= N)
+    if (N > 0)
     {
-        totalthingymajig += i; 
-        i++;                  
+        while (i <= N)
+        {
+            totalthingymajig += i;
+            i = i + 1;
+        }
+        printf("Total: %d\n", totalthingymajig);
     }
-
-    /*ini output*/
-    printf("Total: %d\n", totalthingymajig);
+    else
+    {
+        printf("Masukan tidak boleh kurang dari 0 atau sama dengan 0.\n");
+    }
+    
 
     return 0;
 }
