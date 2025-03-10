@@ -22,8 +22,8 @@ int main()
         {
             if (N % i == 0)
             {
+                printf("%d\n", i);
                 total = total + i;
-                printf("%d\n", total);
             }
         }
         if (total == N)
