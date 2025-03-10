@@ -10,12 +10,31 @@ int main()
 {   /*Kamus*/
     int N;          /*bilangan nya*/
     int i;          /*buat looper*/
-    int checker;    /*buat check bil sempurna or not*/
+    int checker = 0;    /*buat check bil sempurna or not*/
     
     /*Algoritma*/
     printf("Masukkan bilangan: \n");
     scanf("%d", &N);
 
+    if (N <= 0)
+    {
+        printf("Bilangan tidak boleh 0 atau kurang dari 0\n");
+    }
+    else
+    {
+        while (i <= N)
+        {
+         for (i = 1; i < N; i++)
+         {
+            if (N % i == 0)
+            {
+                /* code */
+            }
+            
+         }
+        }
+    }
+    
     
 
 
