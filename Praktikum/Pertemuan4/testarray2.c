@@ -9,7 +9,7 @@ int main()
     float total; /*total semua bilangan*/
     float avg; /*buat mencari rata rata*/
 
-    for (i = 0; i < 11; i++)
+    for (i = 0; i <= 10; i++)
     {
         total = total + i;
 
