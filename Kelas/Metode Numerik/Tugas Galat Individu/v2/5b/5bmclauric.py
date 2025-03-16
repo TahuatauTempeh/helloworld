@@ -1,5 +1,4 @@
 import sympy as simp
-import numpy as bumpy
 
 # No 5 B. y = (1) / (1 + x)^2
 # Deret McLaurin untuk fungsi (1) / (1 + x)^2 ; x = 0,2 ; n = 5 ; a = 0
