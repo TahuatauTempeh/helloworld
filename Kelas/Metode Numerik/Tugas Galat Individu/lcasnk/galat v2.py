@@ -26,7 +26,7 @@ def TaylorSeries_sinh(x, n, a=0):
 # Fungsi untuk menghitung deret Maclaurin dari y = 1/(1+x)^2
 def MaclaurinSeries_b(x, n):
     suku = 0
-    print("\nDeret Maclaurin untuk y = 1/(1+x)^2:")
+    print("\nDeret Maclaurin untuk y =  1/(1+x)^2:")
     for i in range(n):
         rumus = ((-1)**i) * (i + 1) * (x**i)  # Rumus deret Maclaurin untuk y = 1/(1+x)^2
         suku += rumus

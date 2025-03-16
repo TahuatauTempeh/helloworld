@@ -6,7 +6,7 @@ import sympy as sp
 def TaylorSeries(x,n):
     suku = 0
     for i in range(n):
-        rumus = ((-1)**i) * ((x) ** (2*i-1)) / sp.factorial(2*i + 1)
+        rumus = ((x)**i) * ((x) ** (2*i-1)) / sp.factorial(2*i + 1)
         suku += rumus
     return suku
 
