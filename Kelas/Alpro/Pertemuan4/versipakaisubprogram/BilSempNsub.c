@@ -5,9 +5,10 @@
 #include <stdio.h>
 
 /*Sub Program Pencarian Bilangan Sempurna*/
-void sempurnadetector(int *N)
+void sempurnadetector()
 {
     /*Kamus*/
+    int *N;
     int jumlah = 0;
     int i;
 
