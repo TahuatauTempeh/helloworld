@@ -1,0 +1,1 @@
+void cypher(int n, char *pesan);

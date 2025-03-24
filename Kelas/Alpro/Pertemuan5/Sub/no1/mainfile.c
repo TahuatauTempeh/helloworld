@@ -19,7 +19,7 @@ int main()
 
     tukar(&a, &b);
 
-    printf("Nili baru: %d, %d\n", a, b);
+    printf("Nilai baru: %d, %d\n", a, b);
 
     return 0;
 }

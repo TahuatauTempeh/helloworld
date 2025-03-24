@@ -1,0 +1,1 @@
+int hitungPanjang(const char *str);
