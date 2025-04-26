@@ -1,29 +1,33 @@
 #include <stdio.h>
 
-/*Buat hitung array*/
-void array(int *ray, int N)
-{   /*Kamus*/
-    int ganjil[N];
-    int genap[N];
-    int totalganjil = 0;
-    int totalgenap = 0;
-    int i;
-    int *N;
-
-    /*Algoritma*/
-
-    for (i = 0; i < int *N; i++)
-    {
-        
-    }
-    
-    
-}
-
-
 int main()
 {   /*Kamus*/
+    int N;
 
+    /*Algoritma*/
+    scanf("%d", &N);
+    int T[N];
 
+    for (int i = 0; i < N; i++)
+    {
+        scanf("%d", &T[i]);
+    }
+    for (int i = 0; i < N; i++) 
+    {
+        if (T[i] % 2 != 0) 
+        { 
+            printf("%d ", T[i]);
+        }
+    }
+    for (int i = 0; i < N; i++) 
+    {
+        if (T[i] % 2 == 0) 
+        {
+            printf("%d ", T[i]);
+        }
+    }
+
+    printf("\n");
+    return 0;
 }
 
