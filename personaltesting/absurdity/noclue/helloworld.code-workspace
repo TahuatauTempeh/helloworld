@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../Documents/AM/Personal/UNDIP/Semester 1/Codes"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"bitset": "c",
+			"unordered_map": "c",
+			"hitungpanjang.h": "c",
+			"tukarfile.h": "c"
+		}
+	}
+}
