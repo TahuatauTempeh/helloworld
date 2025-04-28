@@ -18,6 +18,7 @@ int main()
         do
         {
             total = total + (1/(float)i);
+            printf("Iterasi ke: %d\n", i);
             printf("%f\n", total);
             printf("----------\n");
             i ++;

@@ -14,9 +14,10 @@ int main()
     }
     else
     {
-        for (float i = 1; i <= N; i++)
+        for (int i = 1; i <= N; i++)
         {
             printf("--------------------\n");
+            printf("Iterasi ke: %d\n", i);
             printf("Before :%f\n", total);
             total = total + (1/(float)i); 
             printf("After : %f\n", total);
