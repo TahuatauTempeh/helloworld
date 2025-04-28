@@ -21,6 +21,7 @@ int main()
             printf("Before :%f\n", total);
             total = total + (1/(float)i); 
             printf("After : %f\n", total);
+            
             // printf(" \n");
             printf("Difference: %f\n", 1/(float)i);
             printf("--------------------\n");
