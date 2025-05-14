@@ -9,7 +9,7 @@ int main()
     int x = 8;
 
     // printf("Input x : \n");
-    // scanf("%d", &x);asdasdsadaskdfasdsadasdasdsadsad
+    // scanf("%d", &x);asdasdsadaskdfasdsadasdasdsadsadfgdghdghdhgdhdgdhd
 
     do
     {
