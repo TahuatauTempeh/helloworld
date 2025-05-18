@@ -17,7 +17,7 @@ int main()
     float mean;
     float maxwin = 0;
     int kota;
-
+    
     for (int i = 0; i < n; i++)
     {
         sum = 0;
