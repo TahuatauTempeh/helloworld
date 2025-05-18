@@ -2,6 +2,21 @@
 // NIM      : 24060124140195
 // Kelas    : A
 
+// Tugas
+
+// No 1
+// a)	Rata rata penjulan terbesar di kota mana?
+// b)	Rata rata penjulana terbesar di bulan apa?
+
+// No 2
+// a)	Penjualan terendah di mana? Di bulan apa?
+// b)	Penjulan terhighest di mana apa? Di bulan apa?
+
+// No 3 
+// 	Penjulan di bulan x untuk tiap kota?
+
+// No 4 
+// 	Penjualan di kota x untuk tiap bulan?
 
 #include <stdio.h>
 
