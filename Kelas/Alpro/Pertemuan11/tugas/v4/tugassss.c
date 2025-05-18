@@ -26,13 +26,14 @@ void soal1a(int arr[3][4], int *m, int *n)
 
         printf("\n");
         printf("Mean = %f\n", mean);
-        printf("\n");
         
         if (mean > maxing)
         {
             maxing = mean;
             kota = i;
         }
+
+        printf("\n");
     }
 
     printf("Rata rata tertinggi di:\n");
@@ -40,18 +41,17 @@ void soal1a(int arr[3][4], int *m, int *n)
     if (kota == 1) 
     {
         printf("Jakarta\n");
-        printf("\n");
     }
     else if (kota == 2) 
     {
         printf("Semarang\n");
-        printf("\n");
     }
     else if (kota == 3) 
     {
         printf("Pati\n");
-        printf("\n");
     }
+
+    printf("\n");
 }
 
 // 1b
@@ -84,24 +84,22 @@ void soal1b(int arr[3][4], int *m, int *n)
 
     if (bulan == 1) 
     {
-    printf("January\n");
-    printf("\n");
+        printf("January\n");
     }
     else if (bulan == 2) 
     {
         printf("February\n");
-        printf("\n");
     }
     else if (bulan == 3) 
     {
         printf("March\n");
-        printf("\n");
     }
     else if (bulan == 4) 
     {
         printf("April\n");
-        printf("\n");
     }
+    
+    printf("\n");
 }
 
 // 2a
@@ -129,39 +127,34 @@ void soal2a(int arr[3][4], int *m, int *n)
     if (minkota == 1) 
     {
         printf("Kota: Jakarta\n");
-        printf("\n");
     }
     else if (minkota == 2) 
     {
         printf("Kota: Semarang\n");
-        printf("\n");
     }
     else if (minkota == 3) 
     {
         printf("Kota: Pati\n");
-        printf("\n");
     }
     
     if (minbulan == 1) 
     {
         printf("Bulan: January\n");
-        printf("\n");
     }
     else if (minbulan == 2) 
     {
         printf("Bulan: February\n");
-        printf("\n");
     }
     else if (minbulan == 3) 
     {
         printf("Bulan: March\n");
-        printf("\n");
     }
     else if (minbulan == 4) 
     {
         printf("Bulan: April\n");
-        printf("\n");
     }
+
+    printf("\n");
 }
 
 // 2b
@@ -189,39 +182,34 @@ void soal2b(int arr[3][4], int *m, int *n)
     if (maxkota == 1) 
     {
         printf("Kota: Jakarta\n");
-        printf("\n");
     }
     else if (maxkota == 2) 
     {
         printf("Kota: Semarang\n");
-        printf("\n");
     }
     else if (maxkota == 3) 
     {
         printf("Kota: Pati\n");
-        printf("\n");
     }
 
     if (maxbulan == 1) 
     {
         printf("Bulan: January\n");
-        printf("\n");
     }
     else if (maxbulan == 2) 
     {
         printf("Bulan: February\n");
-        printf("\n");
     }
     else if (maxbulan == 3) 
     {
         printf("Bulan: March\n");
-        printf("\n");
     }
     else if (maxbulan == 4) 
     {
         printf("Bulan: April\n");
-        printf("\n");
     }
+
+    printf("\n");
 }
 
 // 3
@@ -277,6 +265,7 @@ void soal3(int arr[3][4], int *m, int *n)
     {
         printf("Bulan tidak sesuai format/Invalid.\n");
     }
+    
     printf("\n");
 }
 
@@ -328,10 +317,12 @@ void soal4(int arr[3][4], int *m, int *n)
             printf("%d\n", arr[p - 1][j - 1]);
         }
     }
+    
     else
     {
         printf("Kota tidak sesuai format/Invalid.\n");
     }
+    
     printf("\n");
 }
 
