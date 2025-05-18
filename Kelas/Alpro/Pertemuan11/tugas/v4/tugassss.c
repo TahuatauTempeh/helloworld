@@ -105,7 +105,7 @@ void soal1b(int arr[3][4], int *m, int *n)
 // 2a
 void soal2a(int arr[3][4], int *m, int *n)
 {
-    int minval = 0;
+    int minval = arr[0][0];
     int minkota = 0;
     int minbulan = 0;
 
