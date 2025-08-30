@@ -2,58 +2,99 @@
 
 int main() 
 {
-    int num;
     int N;
-    int i = 0;
-    float mean = 0;
-    int totalganjil = 0;
-    int totalgenap = 0;
+    scanf("%d", &N); 
 
-    scanf("%d %d", &N, &num); 
     int T[N];
-    int genap[N], ganjil[N];
-    int hitunggenap = 0, hitungganjil = 0;
+    int genap[N];
+    int ganjil[N];
+    int hitunggenap = 0;
+    int hitungganjil = 0;
 
-    while (num > 0 && i < N) 
+    for (int i = 0; i < N; i++) 
     {
-        T[i] = num % 10;
-        num /= 10;
+        scanf("%d", &T[i]);
 
-        i++;
-    }
-
-    for (int j = 0; j < i; j++) 
-    {
-        if (T[j] % 2 == 0) 
+        if (T[i] % 2 == 0) 
         {
-            genap[hitunggenap++] = T[j];
+            genap[hitunggenap++] = T[i];
         } 
-        
         else 
         {
-            ganjil[hitungganjil++] = T[j];
+            ganjil[hitungganjil++] = T[i];
         }
     }
 
+    for (int a = 0; a < hitunggenap - 1; a++) 
+    {
+        for (int b = 0; b < hitunggenap - a - 1; b++) 
+        {
+            if (genap[b] > genap[b + 1]) 
+            {
+                int temp = genap[b];
+                genap[b] = genap[b + 1];
+                genap[b + 1] = temp;
+            }
+        }
+    }
 
-    int genapthingy = hitunggenap / 2;
-    int ganjilthingy = hitungganjil / 2;
-    int medianganjil = (ganjil[hitungganjil] + 1) / 2;
-    int mediangenap = ((hitungganjil / 2) + ((hitungganjil / 2) - 1)) / 2;
+    for (int a = 0; a < hitungganjil - 1; a++) 
+    {
+        for (int b = 0; b < hitungganjil - a - 1; b++) 
+        {
+            if (ganjil[b] > ganjil[b + 1]) 
+            {
+                int temp = ganjil[b];
+                ganjil[b] = ganjil[b + 1];
+                ganjil[b + 1] = temp;
+            }
+        }
+    }
 
-    // for (int j = 0; j < hitunggenap; j++) 
-    // {
-    //     totalgenap += genap[j];
-    // }
+    float medianganjil = 0;
+    
+    float mediangenap = 0;
 
-    // for (int j = 0; j < hitungganjil; j++) 
-    // {
-    //     totalganjil += ganjil[j];
-    // }
+    if (hitungganjil > 0) 
+    {
+        if (hitungganjil % 2 == 0) 
+        {
+            medianganjil = (ganjil[hitungganjil / 2 - 1] + ganjil[hitungganjil / 2]) / 2.0;
+        } 
+        else 
+        {
+            medianganjil = ganjil[hitungganjil / 2];
+        }
+    }
 
-    mean = (totalganjil + totalgenap) / (float)(hitungganjil + hitunggenap);
+    if (hitunggenap > 0) 
+    {
+        if (hitunggenap % 2 == 0) 
+        {
+            mediangenap = (genap[hitunggenap / 2 - 1] + genap[hitunggenap / 2]) / 2.0;
+        } 
+        else 
+        {
+            mediangenap = genap[hitunggenap / 2];
+        }
+    }
 
-    printf("%.2f\n", mean);
+    float mean = 0;
 
+    if (hitungganjil > 0 && hitunggenap > 0)
+    {
+        mean = (medianganjil + mediangenap) / 2.0;
+    }
+    else if (hitungganjil > 0)
+    {
+        mean = medianganjil;
+    }
+    else if (hitunggenap > 0)
+    {
+        mean = mediangenap;
+    }
+
+    printf("%.3f\n", mean);
+    
     return 0;
 }
